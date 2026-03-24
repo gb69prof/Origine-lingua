@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Offline · Origine della lingua italiana</title>
+  <meta name="description" content="PWA didattica sull’origine della lingua italiana">
+  <meta name="theme-color" content="#6e1f2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Origine lingua">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="pwa.js"></script>
+</head>
+<body class="">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">Origine della lingua italiana</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="side-menu">Indice</button>
+    </header>
+    <aside class="side-menu" id="side-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/indice.html">Indice completo</a>
+        <a href="pages/mappa.html">Mappa concettuale</a>
+        <a href="pages/timeline.html">Timeline</a>
+        <a href="pages/glossario.html">Glossario</a>
+        <a href="pages/quiz.html">Quiz finale</a>
+        <a href="pages/fonti.html">Bibliografia</a>
+      </nav>
+    </aside>
+    <main class="page">
+      
+<section class="hero">
+  <p class="kicker">Modalità offline</p>
+  <h1>Sei senza connessione.</h1>
+  <p class="lead">La shell della PWA resta disponibile e puoi continuare a leggere le sezioni già precaricate. Se una pagina specifica non compare, torna alla home e riapri il percorso.</p>
+  <div class="cta-row">
+    <a class="button" href="./index.html">Torna alla home</a>
+  </div>
+</section>
+
+    </main>
+  </div>
+  <div class="update-toast" id="updateToast" hidden>
+    <span>Aggiornamento disponibile.</span>
+    <button id="reloadAppBtn" type="button">Ricarica</button>
+  </div>
+</body>
+</html>

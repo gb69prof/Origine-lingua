@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Home · Origine della lingua italiana</title>
+  <meta name="description" content="PWA didattica sull’origine della lingua italiana">
+  <meta name="theme-color" content="#6e1f2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Origine lingua">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="pwa.js"></script>
+</head>
+<body class="">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">Origine della lingua italiana</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="side-menu">Indice</button>
+    </header>
+    <aside class="side-menu" id="side-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/indice.html">Indice completo</a>
+        <a href="pages/mappa.html">Mappa concettuale</a>
+        <a href="pages/timeline.html">Timeline</a>
+        <a href="pages/glossario.html">Glossario</a>
+        <a href="pages/quiz.html">Quiz finale</a>
+        <a href="pages/fonti.html">Bibliografia</a>
+      </nav>
+    </aside>
+    <main class="page">
+      
+<section class="hero">
+  <p class="kicker">PWA installabile</p>
+  <h1>Origine della lingua italiana</h1>
+  <p class="lead">L’italiano non nasce in un punto solo. Emerge dal latino, si frammenta nei volgari, acquista prestigio nella letteratura, viene codificato come norma e solo tardi diventa davvero lingua nazionale.</p>
+  <div class="cta-row">
+    <a class="button" href="./pages/introduzione.html">Inizia il percorso</a>
+    <a class="button secondary" href="./pages/indice.html">Indice completo</a>
+    <a class="button secondary" href="./pages/mappa.html">Mappa concettuale</a>
+    <a class="button secondary" href="./pages/timeline.html">Timeline</a>
+  </div>
+</section>
+<section class="cards">
+  <article class="card">
+    <h3>Percorso guidato</h3>
+    <p>Sette tappe ordinate per capire il movimento vero: latino, volgari, attestazioni, prestigio, norma, diffusione, bilancio critico.</p>
+  </article>
+  <article class="card">
+    <h3>Studio ragionato</h3>
+    <p>Ogni sezione contiene sintesi iniziale, idee chiave, testo completo e un errore da evitare. Niente fumo, solo struttura.</p>
+  </article>
+  <article class="card">
+    <h3>Uso offline</h3>
+    <p>Una volta caricata, la shell della PWA resta disponibile anche senza connessione. È pensata per GitHub Pages e installazione da browser.</p>
+  </article>
+</section>
+<section class="grid-2">
+  <article class="card">
+    <h3>Accessi rapidi</h3>
+    <div class="grid-links">
+      <a class="button secondary" href="./pages/glossario.html">Glossario</a>
+      <a class="button secondary" href="./pages/quiz.html">Quiz finale</a>
+      <a class="button secondary" href="./pages/fonti.html">Bibliografia</a>
+    </div>
+  </article>
+  <article class="card">
+    <h3>Tesi centrale</h3>
+    <p><strong>L’italiano nasce dal basso come evoluzione dei volgari, ma si afferma dall’alto come standard.</strong> La sua storia è una tensione continua tra uso vivo, prestigio culturale e istituzioni.</p>
+  </article>
+</section>
+<p class="footer-note">Materiali sorgente inclusi nello ZIP anche in formato Markdown.</p>
+
+    </main>
+  </div>
+  <div class="update-toast" id="updateToast" hidden>
+    <span>Aggiornamento disponibile.</span>
+    <button id="reloadAppBtn" type="button">Ricarica</button>
+  </div>
+</body>
+</html>
