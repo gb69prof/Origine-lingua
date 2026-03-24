@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Quiz finale · Origine della lingua italiana</title>
+  <meta name="description" content="PWA didattica sull’origine della lingua italiana">
+  <meta name="theme-color" content="#6e1f2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Origine lingua">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <script defer src="../assets/js/app.js"></script>
+  <script defer src="../pwa.js"></script>
+</head>
+<body class="">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Origine della lingua italiana</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="side-menu">Indice</button>
+    </header>
+    <aside class="side-menu" id="side-menu">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../pages/indice.html">Indice completo</a>
+        <a href="../pages/mappa.html">Mappa concettuale</a>
+        <a href="../pages/timeline.html">Timeline</a>
+        <a href="../pages/glossario.html">Glossario</a>
+        <a href="../pages/quiz.html">Quiz finale</a>
+        <a href="../pages/fonti.html">Bibliografia</a>
+      </nav>
+    </aside>
+    <main class="page">
+      
+<section class="quiz-card">
+  <p class="kicker">Verifica finale</p>
+  <h1>Quiz ragionato</h1>
+  <p class="summary">Non serve per fare scena. Serve a controllare se il percorso è diventato struttura mentale.</p>
+  <form id="quizForm">
+    <div class="question">
+      <h3>1. Perché parlare di “origine” dell’italiano è ambiguo?</h3>
+      <label><input type="radio" name="q1" value="a"> Perché non esistono fonti scritte.</label>
+      <label><input type="radio" name="q1" value="b"> Perché riguarda almeno piano genetico, storico-sociale e normativo.</label>
+      <label><input type="radio" name="q1" value="c"> Perché l’italiano non deriva dal latino.</label>
+    </div>
+    <div class="question">
+      <h3>2. Che cosa non bisogna pensare del latino volgare?</h3>
+      <label><input type="radio" name="q2" value="a"> Che abbia influenzato i volgari.</label>
+      <label><input type="radio" name="q2" value="b"> Che sia attestato in testi diversi.</label>
+      <label><input type="radio" name="q2" value="c"> Che sia una lingua unica e perfettamente compatta.</label>
+    </div>
+    <div class="question">
+      <h3>3. Qual è il ruolo della letteratura nella storia dell’italiano?</h3>
+      <label><input type="radio" name="q3" value="a"> Elimina i dialetti.</label>
+      <label><input type="radio" name="q3" value="b"> Costruisce prestigio e modelli autorevoli.</label>
+      <label><input type="radio" name="q3" value="c"> Sostituisce la scuola.</label>
+    </div>
+    <div class="question">
+      <h3>4. Che cosa sostiene la questione della lingua?</h3>
+      <label><input type="radio" name="q4" value="a"> Che la lingua comune è oggetto di scelta e norma culturale.</label>
+      <label><input type="radio" name="q4" value="b"> Che tutte le varietà hanno sempre lo stesso prestigio.</label>
+      <label><input type="radio" name="q4" value="c"> Che l’italiano nasce solo nel Novecento.</label>
+    </div>
+    <div class="question">
+      <h3>5. In che senso l’italiano è insieme “dal basso” e “dall’alto”?</h3>
+      <label><input type="radio" name="q5" value="a"> Perché è nato due volte.</label>
+      <label><input type="radio" name="q5" value="b"> Perché i dialetti vengono aboliti dallo Stato.</label>
+      <label><input type="radio" name="q5" value="c"> Perché evolve spontaneamente come volgare ma viene costruito come standard.</label>
+    </div>
+    <button class="button" type="submit">Correggi</button>
+  </form>
+  <div id="quizResult" class="quiz-result" hidden></div>
+</section>
+
+    </main>
+  </div>
+  <div class="update-toast" id="updateToast" hidden>
+    <span>Aggiornamento disponibile.</span>
+    <button id="reloadAppBtn" type="button">Ricarica</button>
+  </div>
+</body>
+</html>
